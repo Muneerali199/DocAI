@@ -1,0 +1,61 @@
+/* NavBar.css */
+
+.navbar-sticky {
+    transition: background-color 200ms linear;
+}
+
+.navbar-sticky.scrolled {
+    background-color: #fff !important;
+}
+
+.nav-link {
+    font-weight: 400;
+    color: #444;
+    transition: color 200ms linear;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    width: 50%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.scrolled {
+    background-color: white;
+}
+
+#navbar-sticky.scrolled {
+    background-color: white;
+}
+
+@media (max-width: 1023px) {
+    #navbar-sticky {
+        background-color: white;
+    }
+
+    #navbar-sticky .nav-link {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    #navbar-sticky .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    #navbar-sticky button {
+        margin-top: 1rem;
+    }
+}

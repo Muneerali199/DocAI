@@ -1,0 +1,233 @@
+.container {
+    margin: 120px 200px;
+    max-width: 1280px;
+    transition: margin 0.3s ease, gap 0.3s ease;
+}
+
+.heroSectionContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.heroSectionTitle {
+    max-width: 90%;
+    padding-top: 5%;
+}
+
+.leftSectionTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.leftSectionFirstLine,
+.leftSectionSecondLine {
+    color: #302C2C;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.leftSectionSecondLine {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trustedText,
+.onlineHealthcareText {
+    display: inline-block;
+}
+
+.heroSectionContent .h1 {
+    color: #302C2C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118%;
+    letter-spacing: -2.16px;
+}
+
+.heroSectionContent .h3 {
+    color: rgba(48, 44, 44, 0.65);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+    flex-wrap: wrap;
+}
+
+.heroSectionRightPart {
+    max-width: 30%;
+    align-self: flex-end;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        margin: 80px 50px;
+    }
+
+    .heroSectionContent {
+        gap: 3vw;
+    }
+
+    .heroSectionTitle {
+        max-width: 100%;
+    }
+
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+        font-size: 50px;
+    }
+
+    .h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 80px 30px;
+    }
+
+    .heroSectionContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heroSectionTitle {
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .leftSectionTitle {
+        align-items: center;
+    }
+
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+        font-size: 42px;
+    }
+
+    .heroSectionRightPart {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .buttonContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 80px 15px;
+    }
+
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+        font-size: 28px;
+    }
+
+    .h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        margin: 80px 10px;
+    }
+
+    .heroSectionTitle {
+        text-align: center;
+    }
+
+    .leftSectionTitle {
+        align-items: center;
+    }
+
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .leftSectionSecondLine {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h3 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Maintain 425px layout for smaller screens */
+@media screen and (max-width: 375px) {
+    .container,
+    .leftSectionFirstLine,
+    .leftSectionSecondLine,
+    .h3,
+    .buttonContainer {
+        /* Inherit styles from 425px breakpoint */
+    }
+    .leftSectionFirstLine{
+        padding-top: 60px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container,
+    .leftSectionFirstLine,
+    .leftSectionSecondLine,
+    .h3,
+    .buttonContainer {
+        /* Inherit styles from 425px breakpoint */
+    }
+
+    /* Only adjust font sizes if absolutely necessary for readability */
+    .leftSectionFirstLine,
+    .leftSectionSecondLine {
+
+        font-size: 28px;
+    }
+    .leftSectionFirstLine{
+        padding-top: 40px;
+    }
+
+    .h3 {
+        font-size: 13px;
+    }
+}

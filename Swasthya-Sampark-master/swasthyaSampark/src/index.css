@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navbar-sticky a {
+    transition: color 200ms linear, background-color 200ms linear;
+}
+@layer utilities {
+    .h1 {
+        @apply text-headingColor font-poppins text-h1 font-medium;
+    }
+    .h2 {
+        @apply text-headingColor font-poppins text-h2 font-medium;
+    }
+    .h3 {
+        @apply text-subHeadingColor font-poppins text-h3 font-normal flex-wrap;
+    }
+
+}
+

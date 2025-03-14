@@ -1,0 +1,43 @@
+.new-navbar .button-container-3 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vh;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.new-navbar button {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: #175134;
+  color: white;
+  cursor: pointer;
+}
+
+.new-navbar button:hover {
+  animation: ani 0.7s steps(70) forwards;
+}
+
+.new-navbar .mas {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin-top: 17px;
+}
