@@ -1,7 +1,7 @@
 
 ## Introduction
 
-DocAI is a healthcare platform designed to connect patients with doctors for real-time symptom tracking, consultations, and AI-driven health advice. The project was developed as part of a hackathon entry for Technoverse 2024, where it reached the finalist stage among 500+ teams.
+DocAI is a healthcare platform designed to connect patients with doctors for real-time symptom tracking, consultations, and AI-driven health advice. 
 
 ## Modules
 
